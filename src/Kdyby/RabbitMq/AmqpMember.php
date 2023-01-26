@@ -105,7 +105,7 @@ abstract class AmqpMember
 			$this->ch->close();
 		}
 
-		if ($this->conn->isConnected()) {
+		if ($this->conn?->isConnected()) {
 			$this->conn->close();
 		}
 	}
